@@ -60,7 +60,8 @@ ul {
 aside h2 {
     position: absolute;
     top: 605px;
-    left: 150px;
+    left: 135px;
+    top: 0px;
 }
 /* Class Selectors */
 
