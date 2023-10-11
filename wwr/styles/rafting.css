@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+*{
+
+    box-sizing: border-box;
+}
+:root {
+    --primary-color:#1EBDC2;
+    --secondary-color: #A07D6A;
+    --accent1-color: #CEB5A7;
+    --accent2-color: #275A68;
+
+    --heading-font: 'Sedgwick ave', serif;
+    --paragraph-font: 'Roberto', serif;
+
+    --nav-background-color: #A07D6A;
+    --nav-link-color: #1EBDC2;
+    --nav-hover-link-color: #275A68;
+   --nav-hover-background-color: #CEB5A7;
+   ;
+}
+header img {
+    width: 120px;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+
+/* Class declerations */
+
+.hero img{
+    display: block;
+    /* width: 1280px; */
+    /* float: right; */
+    height: auto;
+    position: relative;
+}
+
+div h1 {
+    position: absolute;
+    bottom: 300px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    width: 1024px;
+}
+
+div article {
+    position: absolute;
+    bottom: 0px;
+    left: 700px;
+    width: 200px;
+    height: auto;
+    float: right;
+
+}
+
+div p {
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    width: 500px;
+    height: 200px;
+    /* background-color: white; */
+    
+}
+
+div article img {
+    width: 200px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+.client {
+    width: 200px;
+}
