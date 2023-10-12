@@ -34,18 +34,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Class declerations */
+.hero {
+    position: relative;
+}
 
 .hero img{
     display: block;
     /* width: 1280px; */
     /* float: right; */
     height: auto;
-    position: relative;
 }
 
 div h1 {
     position: absolute;
-    bottom: 300px;
+    top: 50px;
     text-align: center;
     background-color: var(--accent2-color);
     width: 1024px;
@@ -53,26 +55,29 @@ div h1 {
 
 div article {
     position: absolute;
-    bottom: 0px;
-    left: 700px;
-    width: 200px;
+    top: 130px;
+    left: 100px;
+    width: 800px;
+    padding: 10px;
     height: auto;
     float: right;
+    /* background-color: var(--accent2-color); */
 
 }
 
-div p {
+/* div p {
     position: absolute;
     right: 200px;
     top: 50px;
     width: 500px;
-    height: 200px;
-    /* background-color: white; */
+    height: 200px; */
+    /* background-color: white;
+ } */
     
-}
 
 div article img {
     width: 200px;
+    float: right;
 }
 
 footer img {
