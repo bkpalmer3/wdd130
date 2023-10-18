@@ -12,6 +12,12 @@
     padding: 0;
     margin: 0;
 }
+h1{
+    font-family: var(--Heading-font);
+    padding: 0.5em;
+    margin: 1em;
+    margin-bottom: 0;
+}
 /* body selectors */
 body{
     font-family: var(--paragraph-font);
@@ -22,6 +28,7 @@ form {
     display: grid;
     width: 28em;
     margin: 25px;
+    margin-top: 0;
     padding: 0.5em;
     border: 1px solid black;
     background-color: rgba(207, 196, 206, 0.601);
