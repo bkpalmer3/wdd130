@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a quiz about html and css">
+    <meta name="author" content="Ben Palmer">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <title>HTML and CSS Quiz | WDD130</title>
+
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>HTML & CSS Quiz</legend>
+                <!-- Question 1 -->
+                <label for="q1">1. What does HTML standfor?</label>
+                <input type="text" id="q1" name="q1">
+                <!-- Question 2 -->
+                <label for="q2">2. What is the difference between frontend programming and background programing?</label>
+                <input type="textarea" id="q2" name="q2" class="big-box">
+                <!-- Question 3 -->
+                <label for="q3">3. Which would be an example of a CSS Seleclor?</label>
+                <select name="q3" id="q3">
+                    <option value="answer1">Select [main p]</option>
+                    <option value="answer2">div {}</option>
+                    <option value="answer3">margin: 0px;</option>
+                </select>
+                <!-- Question 4 -->
+                <label for="q4">4. Which number would control the opacity when using this rgba() function?</label>
+                <img src="images/rgba-example.png" alt="text that displays background-color: rgba(50, 168, 191, 0.709); in css">
+                <input type="number" id="q4" name="q4" class="small-box">
+            </fieldset>
+            <div>
+                <!-- Submit button -->
+                <button type="submit">Submit Quiz</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

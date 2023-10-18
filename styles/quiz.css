@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+
+/* font text for the page */
+:root{
+    --Heading-font: "oswald", serif;
+    --paragraph-font: "Roboto Mono", serif;
+}
+
+/* universal selectors */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* body selectors */
+body{
+    font-family: var(--paragraph-font);
+}
+/* form selectors */
+
+form {
+    display: grid;
+    width: 28em;
+    margin: 25px;
+    padding: 0.5em;
+    border: 1px solid black;
+    background-color: rgba(207, 196, 206, 0.601);
+    border-radius: 0;
+    justify-items: center;
+}
+/* fieldset selcectors */
+fieldset{
+    display: grid;
+    grid-gap: 0.5em;
+    padding: 1.5em;
+    
+}
+img {
+    width: 350px;
+    margin-left: 20px;
+}
+legend{
+    padding: 0.5rem;
+    background-color: rgba(50, 168, 191, 0.709);
+    border-radius: 20em;
+    border: 2px solid rgba(146, 146, 148, 0.38);
+}
+
+label{
+    text-align: left;
+    padding-right: auto;
+    padding: 0.3em;
+    
+}
+input, select{
+    padding: 1em;
+}
+
+div{
+    display: flex;
+    justify-content: right;
+}
+button {
+    width: 10em;
+    height: 2.3em;
+    margin: 0.5em;
+    padding: 0.2em;
+    border-radius: 100%;
+    border: 2px solid rgba(146, 146, 148, 0.38);
+    background-color: rgba(50, 168, 191, 0.709);
+}
+
+button:hover{
+    background-color: rgba(202, 67, 46, 0.709);
+}
+.big-box{
+    height: 8em;
+}
+.small-box{
+    width: 3em;
+    padding: 0.5em;
+}
