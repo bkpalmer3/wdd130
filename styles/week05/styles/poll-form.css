@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+
+/* font text for the page */
+:root{
+    --Heading-font: "oswald", serif;
+    --paragraph-font: "Roboto Mono", serif;
+}
+
+/* universal selectors */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* header selectors */
+header, h1 {
+    font-family: var(--Heading-font);
+    text-align: center;
+    padding: 0.3rem;
+}
+
+/* body selectors */
+body{
+    font-family: var(--paragraph-font);
+}
+/* Main selectors */
+main {
+    display: flex;
+    justify-content: center;
+}
+/* form selectors */
+
+form {
+    /* Style the form with a width, a centered margin, 
+    padding, border, border-radius, background-color, and 
+    a display layout of grid. */
+    display: grid;
+    width: 40em;
+    margin: 25px;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: rgba(166, 63, 113, 0.2);
+    border-radius: 0;
+
+}
+
+/* fieldset selcectors */
+fieldset{
+    /* style each fieldset to be a grid and provide a gridgap */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+    padding: 1em;
+}
+
+legend{
+    /* style how you would like */
+    padding: 0.5rem;
+}
+
+label{
+    text-align: center;
+    padding-right: auto;
+    padding: 0.3em;
+}
+
+style, input, textarea{
+    /* add padding and a larger fontsize */
+    padding: 0.2rem;
+    font-size: larger;
+}
+
+input[type="checkbox"] {
+    /* Style the checkbox element to be larger than the 
+    default size using width and height. Change the 
+    vertical-align to be at the bottom in order for 
+    it to fit in its space. */
+    width: 1.5em;
+    height: 2em;
+    vertical-align: bottom;
+}
+
+button {
+    /* Style the button as you see fit along with 
+    the button:hover pseudo-class. */
+    width: 150px;
+    height: 60px;
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-left: 17em;
+    margin-right: 13em;
+    background-color: rgba(0, 0, 0, 0.138);
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.138);
+}
+/* footer selectors */
+
+footer p{
+    /* style the footer */
+    margin: 0.5em;
+    text-align: center;
+}
+/* class-selectors */
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+
+}
+.column2 {
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}

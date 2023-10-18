@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="a place to practice making a form for my class">
+    <meta name="Author" content="Ben Palmer">
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+    <title>WDD 130 | Ben Palmer | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Ben Palmer | HTML From - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input type="email" id="useremail" name="fullname">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="internet-explorer">Internet Explorer</option>
+                        <option value="safari">Safari</option>
+                        <option value="firefox">Firefox</option>
+                    </select>
+                </div>
+                <div class="form-item column2">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+                <!-- <div class="form-item"> -->
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea name="feedback" id="feeback" rows="4" placeholder="San Diego California, Salt Lake City Utah, Rexburg Idaho"></textarea>
+                <!-- </div> -->
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2023 | HTML Form - User Poll Activity | Ben Palmer</p>
+
+    </footer>
+    
+</body>
+</html>
