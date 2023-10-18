@@ -3,6 +3,7 @@
 
     box-sizing: border-box;
 }
+/* Root */
 :root {
     --primary-color:#1EBDC2;
     --secondary-color: #A07D6A;
@@ -13,18 +14,50 @@
     --paragraph-font: 'Roboto', serif;
 
     --nav-background-color: #A07D6A;
-    --nav-link-color: #1EBDC2;
+    --nav-link-color: #275A68;
     --nav-hover-link-color: #275A68;
    --nav-hover-background-color: #CEB5A7;
    ;
+
+/* Header */
 }
-header img {
-    width: 120px;
-    height: auto;
+header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    background-color: var(--secondary-color);
+    width: 100%;
+
+}
+header p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header p a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: x-large;
+    /* height: auto; */
+
 }
 
+header p a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+header img {
+    display: flex;
+    align-self: end;
+    width: 80px;
+    height: auto;
+    margin: 10px;
+    
+}
+/* header end  */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: var(--heading-font);
 }
 
@@ -32,32 +65,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--paragraph-font);
 }
 
+section{
+    text-align: center;
+}
 
 /* Class declerations */
 .hero {
     position: relative;
+    width: 100%;
 }
 
-.hero img{
+.hero .background{
     display: block;
     /* width: 1280px; */
     /* float: right; */
     height: auto;
+    width: 100%;
 }
 
 div h1 {
     position: absolute;
-    top: 50px;
+    top: 3%;
     text-align: center;
     background-color: rgba(39,90,104, 0.7);
-    width: 1024px;
+    width: 100%;
 }
 
 div article {
     position: absolute;
-    top: 130px;
-    left: 100px;
-    width: 800px;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
     padding: 10px;
     height: auto;
     float: right;
@@ -66,6 +105,22 @@ div article {
 
 }
 
+/* article p, article img {
+    height: auto;
+} */
+
+figure {
+    margin: 0;
+}
+.flexbox-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rafting-adventure{
+    width: 100%;
+    height: auto;
+}
 /* div p {
     position: absolute;
     right: 200px;
@@ -81,11 +136,17 @@ div article img {
     float: right;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
 footer img {
     width: 50px;
-    height: auto;
+}
+footer nav {
+    grid-column: 3;
 }
 
-.client {
+/* .client {
     width: 200px;
-}
+} */
