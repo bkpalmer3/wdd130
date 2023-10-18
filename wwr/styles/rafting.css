@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+/* Universal selectors */
 *{
-
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 /* Root */
@@ -56,12 +58,21 @@ header img {
     
 }
 /* header end  */
-h1, h2, h3, h4, h5, h6 {
+
+/* Main selectors */
+
+h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
+
+}
+h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    padding: 0.8em;
 }
 
-* p {
+p {
     font-family: var(--paragraph-font);
 }
 
@@ -69,10 +80,18 @@ section{
     text-align: center;
 }
 
+div article p {
+    width: 100%;
+}
+/* Hero Image */
 /* Class declerations */
 .hero {
     position: relative;
     width: 100%;
+}
+
+.hero article img{
+    width: 20%;
 }
 
 .hero .background{
@@ -82,7 +101,7 @@ section{
     height: auto;
     width: 100%;
 }
-
+/* Class declarations end */
 div h1 {
     position: absolute;
     top: 3%;
@@ -97,18 +116,16 @@ div article {
     right: 10%;
     left: 10%;
     bottom: 10%;
-    padding: 10px;
+    padding: 1%;
     height: auto;
     float: right;
     background-color: rgba(39,90,104, 0.7);
     color: white;
 
 }
+/* Hero Image end */
 
-/* article p, article img {
-    height: auto;
-} */
-
+/* Adcenture awaits you selectors */
 figure {
     margin: 0;
 }
@@ -121,24 +138,20 @@ figure {
     width: 100%;
     height: auto;
 }
-/* div p {
-    position: absolute;
-    right: 200px;
-    top: 50px;
-    width: 500px;
-    height: 200px; */
-    /* background-color: white;
- } */
-    
+
 
 div article img {
     width: 200px;
     float: right;
 }
+/* Adventrue awaits you selectors end */
+ /* Main end */
 
+ /* Footer Selectors */
 footer {
     display: grid;
     grid-template-columns: auto 1fr;
+    padding: 2em
 }
 footer img {
     width: 50px;
@@ -146,7 +159,4 @@ footer img {
 footer nav {
     grid-column: 3;
 }
-
-/* .client {
-    width: 200px;
-} */
+/* footer end */
