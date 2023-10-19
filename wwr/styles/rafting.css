@@ -7,16 +7,16 @@
 }
 /* Root */
 :root {
-    --primary-color:#1EBDC2;
+    --primary-color:#275A68;
     --secondary-color: #A07D6A;
     --accent1-color: #CEB5A7;
-    --accent2-color: #275A68;
-
+    --accent2-color: #1EBDC2; 
+/* 1EBDC2 */
     --heading-font: 'Sedgwick ave Display', serif;
     --paragraph-font: 'Roboto', serif;
 
     --nav-background-color: #A07D6A;
-    --nav-link-color: #275A68;
+    --nav-link-color: #fff4d2;
     --nav-hover-link-color: #275A68;
    --nav-hover-background-color: #CEB5A7;
    ;
@@ -60,7 +60,9 @@ header img {
 /* header end  */
 
 /* Main selectors */
-
+/* body{
+    background-color: var(--accent2-color);
+} */
 h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
@@ -85,6 +87,9 @@ div article p {
 }
 /* Hero Image */
 /* Class declerations */
+.about-us{
+    color: var(--accent2-color);
+}
 .hero {
     position: relative;
     width: 100%;
@@ -133,6 +138,10 @@ figure {
     display: flex;
     gap: 5px;
     align-items: center;
+    justify-content: space-around;
+    background-color: var(--accent1-color);
+    padding: 1em;
+    
 }
 .rafting-adventure{
     width: 100%;
@@ -160,3 +169,72 @@ footer nav {
     grid-column: 3;
 }
 /* footer end */
+
+/* Contact us page */
+iframe{
+    width: 40em;
+    height: auto;
+    margin: 0.5em;
+}
+ul{
+    text-align: left;
+    float: left;
+    margin-left: 5em;
+    padding: 0.5em;
+}
+.company-information{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+}
+.contact-us-page{
+    text-align: center;
+    padding: 0.7em;
+}
+.happy-employee{
+    width: 200px;
+}
+
+/* form */
+.form{
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: grid;
+    width: 30em;
+    /* margin: 25px;
+    margin-top: 0; */
+    padding: 0.5em;
+    border: 1px solid black;
+    background-color: var(--accent1-color);
+    border-radius: 0;
+    justify-items: center;
+    font-family: var(--paragraph-font);
+}
+fieldset{
+    display: grid;
+    padding: 0.5em;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* justify-content: center;
+    flex-flow: column wrap; */
+}
+input, select, textarea{
+    float: right;
+    padding: 0.5em;
+    margin: 0.5em;;
+}
+
+.checkbox{
+    padding: 1em;
+    height: 1.5em;
+}
+button{
+    width: 5em;
+    height: 2em;
+    margin-top: 0.5em;
+}
+
+button:hover{
+    background-color: var(--nav-hover-link-color);
+}
