@@ -12,14 +12,14 @@ nav {
     align-content: center;
 }
 nav a {
-    color: white;
+    color:  black;
     display: block;
     padding: 1px;
     text-decoration: none;
     
 }
 h1 {
-    color: steelblue;
+    color: #000000;
     border-bottom: 1px solid steelblue;
 
 }
@@ -76,6 +76,10 @@ aside h2 {
     position: absolute;
     left: 135px;
     top: 35px;
+}
+
+li a {
+    color: black;
 }
 /* Class Selectors */
 
