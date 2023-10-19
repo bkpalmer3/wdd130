@@ -30,12 +30,12 @@ header {
     width: 100%;
 
 }
-header p {
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-header p a {
+header nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     font-family: var(--heading-font);
@@ -44,7 +44,7 @@ header p a {
 
 }
 
-header p a:hover {
+header nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
